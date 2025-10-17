@@ -5,6 +5,7 @@ import Timeline from './components/Timeline.jsx';
 import TicketPricing from './components/TicketPricing.jsx';
 import CompaniesOrbit from './components/CompaniesOrbit.jsx';
 import Prizes from './components/Prizes.jsx';
+import WebsiteMockup from './components/WebsiteMockup.jsx';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <TicketPricing />
       <CompaniesOrbit />
       <Prizes />
+      <WebsiteMockup />
       <footer className="container mx-auto px-6 py-12">
         <div className="rounded-xl border-4 border-white bg-neutral-900 px-6 py-4 shadow-[6px_6px_0_#000] text-sm font-semibold text-white/70">
           Built with a bold, dark neobrutal vibe. See you at the tournament.
