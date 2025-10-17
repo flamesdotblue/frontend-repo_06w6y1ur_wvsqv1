@@ -7,7 +7,7 @@ export default function Hero() {
       {/* 3D Scene */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/FduaNp3csZktbOi3/scene.splinecode"
+          scene="https://prod.spline.design/zks9uYILDPSX-UX6/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>

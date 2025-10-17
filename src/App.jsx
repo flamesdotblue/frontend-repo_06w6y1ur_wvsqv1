@@ -1,6 +1,7 @@
 import Hero from './components/Hero'
 import Highlights from './components/Highlights'
 import Timeline from './components/Timeline'
+import TicketPricing from './components/TicketPricing'
 import Prizes from './components/Prizes'
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
 
       {/* Timeline */}
       <Timeline />
+
+      {/* Pricing Ticket */}
+      <TicketPricing />
 
       {/* Prizes & CTA */}
       <Prizes />
