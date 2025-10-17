@@ -2,20 +2,20 @@ import React from 'react';
 import { Calendar, Clock, MapPin } from 'lucide-react';
 
 const Item = ({ time, title, info }) => (
-  <div className="relative rounded-xl border-4 border-black bg-white p-5 shadow-[6px_6px_0_#000]">
-    <div className="flex items-center gap-3 text-black/80">
+  <div className="relative rounded-xl border-4 border-white bg-neutral-900 p-5 shadow-[6px_6px_0_#000]">
+    <div className="flex items-center gap-3 text-white/80">
       <Clock className="h-5 w-5" />
       <span className="font-semibold">{time}</span>
     </div>
-    <h4 className="mt-2 font-extrabold text-xl">{title}</h4>
-    <p className="text-black/70 mt-1">{info}</p>
+    <h4 className="mt-2 font-extrabold text-xl text-white">{title}</h4>
+    <p className="text-white/70 mt-1">{info}</p>
   </div>
 );
 
 export default function Timeline() {
   return (
     <section id="timeline" className="container mx-auto px-6 py-16">
-      <div className="mb-6 inline-flex items-center gap-2 rounded-md border-4 border-black bg-yellow-200 px-4 py-2 shadow-[4px_4px_0_#000]">
+      <div className="mb-6 inline-flex items-center gap-2 rounded-md border-4 border-white bg-neutral-900 px-4 py-2 shadow-[4px_4px_0_#000]">
         <Calendar className="h-5 w-5" />
         <span className="font-bold">June 21, 2025</span>
         <span className="mx-2">·</span>
