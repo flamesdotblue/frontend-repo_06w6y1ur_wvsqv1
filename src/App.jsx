@@ -1,26 +1,36 @@
-import { useState } from 'react'
+import Hero from './components/Hero'
+import Highlights from './components/Highlights'
+import Timeline from './components/Timeline'
+import Prizes from './components/Prizes'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
+    <div className="min-h-screen w-full font-['Manrope',_Inter,_system-ui]">
+      {/* HERO with Spline 3D */}
+      <Hero />
+
+      {/* Highlights / How it works */}
+      <Highlights />
+
+      {/* Timeline */}
+      <Timeline />
+
+      {/* Prizes & CTA */}
+      <Prizes />
+
+      {/* Footer */}
+      <footer className="w-full bg-neutral-900 py-10 text-neutral-300">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
+            <p className="text-sm">© 2025 HireQuest Tournament. Built for makers.</p>
+            <div className="flex items-center gap-4 text-sm">
+              <a href="#highlights" className="hover:text-white">About</a>
+              <a href="#" className="hover:text-white">Code of Conduct</a>
+              <a href="#register" className="hover:text-white">Register</a>
+            </div>
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
   )
 }
