@@ -1,10 +1,9 @@
-import Spline from '@splinetool/react-spline'
-import { Rocket } from 'lucide-react'
+import React from 'react';
+import Spline from '@splinetool/react-spline';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[80vh] w-full overflow-hidden bg-neutral-950 text-white">
-      {/* 3D Scene */}
+    <section className="relative min-h-[70vh] w-full overflow-hidden bg-yellow-200">
       <div className="absolute inset-0">
         <Spline
           scene="https://prod.spline.design/zks9uYILDPSX-UX6/scene.splinecode"
@@ -12,41 +11,29 @@ export default function Hero() {
         />
       </div>
 
-      {/* Gradient + grid overlay - non-blocking for Spline */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-950/40 via-neutral-950/60 to-neutral-950" />
-      <div className="pointer-events-none absolute inset-0 [background-image:radial-gradient(rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:20px_20px]" />
-
-      {/* Content */}
-      <div className="relative mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 pb-16 pt-28 sm:pt-32 md:pt-40">
-        <span className="inline-flex items-center gap-2 rounded-lg border-4 border-black bg-yellow-300 px-4 py-2 text-sm font-extrabold uppercase tracking-wider shadow-[6px_6px_0_#000]">
-          <Rocket className="h-4 w-4" /> HireQuest 2025
-        </span>
-        <h1 className="max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
-          The Neobrutal Hiring Tournament
+      <div className="relative z-10 container mx-auto px-6 py-24 flex flex-col items-center text-center">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/40 to-white/80 mix-blend-normal" />
+        <h1 className="relative font-black text-4xl sm:text-6xl md:text-7xl tracking-tight text-black">
+          Hiring Tournament 2025
         </h1>
-        <p className="max-w-2xl text-lg text-neutral-200 md:text-xl">
-          A fast-paced, skills-first competition where top talent ships real solutions live. Battle through challenges, wow judges, and earn offers on the spot.
+        <p className="relative mt-4 max-w-2xl text-black/80 text-lg sm:text-xl">
+          A neobrutalist event bringing top talent and bold ideas together. Build, ship, and get hired.
         </p>
-        <div className="mt-2 flex flex-wrap items-center gap-3">
+        <div className="relative mt-8 flex items-center gap-4">
           <a
-            href="#register"
-            className="rounded-lg border-4 border-black bg-lime-300 px-6 py-3 text-base font-black text-black shadow-[6px_6px_0_#000] transition-transform hover:-translate-y-0.5 active:translate-y-0"
+            href="#tickets"
+            className="inline-block rounded-md border-4 border-black bg-lime-300 px-6 py-3 text-black font-semibold shadow-[6px_6px_0_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[4px_4px_0_#000]"
           >
-            Register Now
+            Get Tickets
           </a>
           <a
-            href="#highlights"
-            className="rounded-lg border-4 border-black bg-white/90 px-6 py-3 text-base font-black text-black shadow-[6px_6px_0_#000] transition-transform hover:-translate-y-0.5 active:translate-y-0"
+            href="#timeline"
+            className="inline-block rounded-md border-4 border-black bg-white px-6 py-3 text-black font-semibold shadow-[6px_6px_0_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[4px_4px_0_#000]"
           >
-            See How It Works
+            View Schedule
           </a>
-        </div>
-        <div className="mt-6 flex flex-wrap gap-4 text-sm text-neutral-300">
-          <span className="rounded-md border-2 border-neutral-700 bg-neutral-900 px-3 py-1 font-semibold">June 14–16, 2025</span>
-          <span className="rounded-md border-2 border-neutral-700 bg-neutral-900 px-3 py-1 font-semibold">Remote + Onsite Finals</span>
-          <span className="rounded-md border-2 border-neutral-700 bg-neutral-900 px-3 py-1 font-semibold">Teams or Solo</span>
         </div>
       </div>
     </section>
-  )
+  );
 }
